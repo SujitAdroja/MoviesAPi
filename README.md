@@ -46,3 +46,39 @@ This project demonstrates CRUD operations, pagination, error handling, and Swagg
    ```bash
    git clone https://github.com/your-username/movies-api.git
    cd movies-api
+
+2. Install Dependencies
+   ```bash
+   npm install
+
+3. Create .env file in root folder
+   ```bash
+   MONGODB_URI=Your mongodb connection string
+   BACKEND_PORT=5000
+
+4. Run project locally
+   ```bash
+   npm run dev
+
+5. Run test
+   ```bash
+   npm run test
+
+## 📁 Project Structure
+
+```bash
+movies-api/
+│── src/
+│   ├── controllers/    # API logic
+│   ├── models/         # Mongoose models
+│   ├── routes/         # API routes
+|   ├── tests/          # unit tests
+│   └── index.ts/       
+|    
+│
+├── .env.example        # Example environment file
+├── package.json
+├── README.md
+
+
+
