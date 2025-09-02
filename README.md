@@ -44,7 +44,7 @@ This project demonstrates CRUD operations, pagination, error handling, and Swagg
 
 1. Clone the repo  
    ```bash
-   git clone https://github.com/your-username/movies-api.git
+   git clone https://github.com/SujitAdroja/movies-api.git
    cd movies-api
 
 2. Install Dependencies
