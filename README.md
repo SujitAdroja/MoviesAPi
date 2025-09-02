@@ -40,6 +40,18 @@ This project demonstrates CRUD operations, pagination, error handling, and Swagg
 
 ---
 
+ ### 📦 Request Body Examples
+
+#### ➕ Create a Movie (POST `/movies`)
+```json
+{
+  "title": "Inception",      //required field
+  "director": "Christopher Nolan",
+  "releaseYear": 2010,
+  "genre": "Sci-Fi",
+  "rating": 9
+}
+
 ## ⚙️ Installation & Setup
 
 1. Clone the repo  
