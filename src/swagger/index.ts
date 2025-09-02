@@ -8,7 +8,7 @@ const options = {
       version: "1.0.0",
       description: "API documentation for Movies app",
     },
-    servers: [{ url: "http://localhost:5000" }],
+    servers: [{ url: "https://moviesapi-zhkp.onrender.com/" }],
   },
   apis: ["src/routes/*.ts"], // Path to your route files
 };
