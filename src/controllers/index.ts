@@ -97,7 +97,7 @@ export const addNewMovie = async function (req: Request, res: Response) {
       return res.status(400).json({
         success: false,
         message: "Validation error",
-        error: error.errors?.rating?.message || "Invalid input",
+        error: error.errors || "Invalid input",
       });
     }
 
@@ -127,7 +127,7 @@ export const updateMovie = async function (req: Request, res: Response) {
       res.status(200).json({
         success: true,
         message: "Movies updated successfully",
-        Data: movie,
+        data: movie,
         updatedData: newMovie,
       });
     }

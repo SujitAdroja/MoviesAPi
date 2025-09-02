@@ -1,6 +1,5 @@
 import express from "express";
-
-const app = express();
+export const app = express();
 import dotenv from "dotenv";
 import { connectToDatabase } from "./database/connect";
 import { moviesRoute } from "./routes";
@@ -9,9 +8,9 @@ import { swaggerSpec } from "./swagger";
 
 dotenv.config();
 
-app.use(express.static("public")); //usefull for serving the static file in browser like image, css html and all others.
-app.use(express.urlencoded({ extended: true })); //usefull for handling submitted form and parsing the req.body
-app.use(express.json()); //for pasrsing json data and sending the json data
+app.use(express.static("public"));
+app.use(express.urlencoded({ extended: true }));
+app.use(express.json());
 
 app.use("/api-docs", swaggerUi.serve, swaggerUi.setup(swaggerSpec));
 app.use("/movies", moviesRoute);
